@@ -24,7 +24,10 @@ function manipulateArray() {
       // Final update of output div with multiplied array
       document.getElementById('output').textContent = finalArray.join(',');
     })
-	.catch((err) => {
+    .catch((err) => {
       console.error('An error occurred:', err);
     });
 }
+
+// Run the function when the page loads
+window.onload = manipulateArray;
